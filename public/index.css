@@ -1,0 +1,137 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:rgb(240, 242, 245);
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+}
+
+ /* NavBar */
+.navBar{
+  display: flex;
+  position: relative;
+ 
+}
+
+.navBar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background:linear-gradient(rgba(13, 7, 70, 0.4), rgba(55, 28, 211, 0.3));
+  z-index: -1;
+}
+
+.navImg{
+  border-radius: 50%;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 10px;
+  z-index: 5;
+}
+
+.site_title{
+  margin: 15px;
+  padding: 8px 0;
+  color: #fff;
+  font-size: 130%;
+}
+.navList{
+  display: flex;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.navItem {
+  text-decoration: none;
+  list-style: none;
+  margin: 15px;
+  transition: border-bottom 0.2s; 
+  border-bottom: 2px solid rgba(66, 36, 36, 0);
+  padding: 8px 0;
+  color: #fff;
+  font-size: 90%;
+}
+
+.navItem a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.navItem:hover{
+  border-bottom: 2px solid black;
+}
+
+
+
+/* Register, Login box  */
+.register,.login{
+  width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 10px black;
+  background-color: white;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  background: #f1f1f1;
+}
+
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.signupbtn, .loginbtn {
+  background-color: #4CAF50;
+  color: white;  
+  width: 100px;
+  height: 50px;
+  margin-left: 165px;
+  opacity: 0.9;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  outline:none;
+}
+
+button:hover {
+  opacity:1;
+  
+}
+
+.bottom_link{
+  margin-left: 115px;
+  margin-top: 10px;
+}
+
+
+
+/* Landing Page  */
+.home{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 800px;
+}
