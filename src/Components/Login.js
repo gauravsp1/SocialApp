@@ -30,7 +30,11 @@ function Login() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        if (list.email !== user.email || list.password !== user.password) {
+        if(!list){
+            alert("Wrong Credentials");
+        }
+        
+        else if (list.email !== user.email || list.password !== user.password) {
             alert("Wrong Credentials");
         }
         else {
