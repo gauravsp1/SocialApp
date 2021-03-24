@@ -37,6 +37,10 @@ function Register() {
             alert("Complete All Feilds");
             e.preventDefault()
         }
+        else if (user.username.includes("@")) {
+            alert("Invalid Username");
+            e.preventDefault()
+        }
         else if (!user.email.includes("@")) {
             alert("Invalid Email");
             e.preventDefault()

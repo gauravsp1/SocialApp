@@ -11,9 +11,9 @@ function Home() {
         <NavBarLogout/>
         <div className="home">
             
-            <h1><i>{list.username}</i>,</h1>
+            <h1>Hi <i>{list.username}</i>,</h1>
             <h1>Welcome to SocialApp</h1>
-            <img src="../images/welcome.jpg" alt="Welcome Image"/>
+            <img src="./images/welcome.jpg" alt="Welcome Image"/>
         </div>
         </>
     )
